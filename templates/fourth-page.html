@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Header Example</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <link rel="stylesheet" href="css/fourth-style.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+    <div class="container px-lg-5 py-1">
+      <a class="navbar-brand" href="#">
+        <strong>Illustration.</strong><span>AI</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          
+             <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Downloads
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#"><img src="assets/dropdown images/mdi_apple.svg" alt=""> App store</a></li>
+              <li><a class="dropdown-item" href="#"><img src="assets/dropdown images/logos_google-play-icon.svg" alt=""> App store</a></li>
+              <li><a class="dropdown-item" href="#"><img src="assets/dropdown images/simple-icons_huawei.svg" alt=""> App Gallery</a></li>
+              <li><a class="dropdown-item" href="#"><img src="assets/dropdown images/foundation_social-amazon.svg" alt=""> App store</a></li>
+              <li><a class="dropdown-item" href="#"><img src="assets/dropdown images/ri_meta-fill.svg" alt=""> Meta Guest Store</a></li>
+              <li><a class="dropdown-item" href="#"><img src="assets/dropdown images/tabler_device-vision-pro.svg" alt=""> Apple vision pro</a></li>
+             </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Generate illustration</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+            <button class="btn btn-outline me-2 btn-stop">Stop</button>
+            <button class="btn btn-deploy "  >Deploy</button>
+            
+            <div class="dropdown">
+                <button class="btn btn-link dots" id="dropdownMenuDots" data-bs-toggle="dropdown" aria-expanded="false">
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuDots">
+                  <li><a class="dropdown-item" href="#">Link 1</a></li>
+                  <li><a class="dropdown-item" href="#">Link 2</a></li>
+                  <li><a class="dropdown-item" href="#">Link 3</a></li>
+                </ul>
+              </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+ <!-- nav ended here -->
+
+  <!-- hero-section started from here -->
+
+  <section>
+    <div class="hero-section py-3">
+      <div class="container">
+        <div class="hero-heading">
+          <h3>How can I assist you?</h3> 
+        </div>
+
+        <!-- User query input field -->
+        <div class="search-box">
+          <input type="text" placeholder="Generate an illustration..." id="user-query">
+          <button type="submit" id="generate-btn">Generate</button>
+        </div>
+
+        <div class="progress-steps pt-5 mb-0">
+          Steps: 1/10
+        </div>
+      </div>
+
+      <div class="container pb-5">
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <!-- Swiper -->
+            <div class="swiper pb-4">
+              <div class="mySwiper">
+                <div class="swiper-wrapper">
+                  <!-- Placeholder for dynamic images -->
+                  <div class="swiper-slide"><img src="assets/fourth-page-images/Frame 43.svg" alt="Illustration 1"></div>
+                  <div class="swiper-slide"><img src="assets/fourth-page-images/Frame 43.svg" alt="Illustration 2"></div>
+                  <div class="swiper-slide"><img src="assets/fourth-page-images/Frame 43.svg" alt="Illustration 3"></div>
+                </div>
+              </div>
+              <div class="swiper-button-next">
+                <button type="button" class="slick-next slick-arrow"><i class="bi bi-caret-right"></i></button>
+              </div>
+              <div class="swiper-button-prev" style="position: absolute; left: 50px;">
+                <button type="button" class="slick-prev slick-arrow"><i class="bi bi-caret-left"></i></button>
+              </div>
+              <div class="custom-pagination swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <div class="row line mt-0 "></div>
+  <div class="container-fluid space-container footer">
+    <div class="row justify-content-evenly py-5">
+      <div class="col-md-6 col-lg-3">
+        <h5 class="footer-h5">Discover</h5>
+        <ul class="footer-list">
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Handbook</a></li>
+          <li><a href="#">Content</a></li>
+          <li><a href="#">Education</a></li>
+          <li><a href="#">Tools</a></li>
+        </ul>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <h5 class="footer-h5">Download</h5>
+        <ul class="footer-list">
+          <li><a href="#">App store</a></li>
+          <li><a href="#">Play store</a></li>
+          <li><a href="#">Huawei</a></li>
+          <li><a href="#">Amazon</a></li>
+          <li><a href="#">Meta quest store</a></li>
+        </ul>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <h5 class="footer-h5">Support</h5>
+        <ul class="footer-list">
+          <li><a href="#">Press kit</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Terms & condition</a></li>
+          <li><a href="#">Privacy policy</a></li>
+        </ul>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <h5 class="footer-h5">Contact us</h5>
+        <a href="mailto:abced@gmail.com" class="footer-mail">abced@gmail.com</a>
+        <div class="media-icon pt-2">
+          <a href="#"><img src="./assets/footer-images/ic_baseline-facebook.png" alt=""></a>
+          <a href="#"><img src="./assets/footer-images/prime_twitter.png" alt=""></a>
+          <a href="#"><img src="./assets/footer-images/mdi_pinterest.png" alt=""></a>
+          <a href="#"><img src="./assets/footer-images/mdi_youtube.png" alt=""></a>
+          <a href="#"><img src="./assets/footer-images/ic_outline-discord.png" alt=""></a>
+          <a href="#"><img src="./assets/footer-images/ic_round-tiktok.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid copy">
+    <div class="row">
+      <div class="col-12 copyright">
+        <p>Copyright, 2024 All rights reserved</p>
+      </div>
+    </div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  // Initialize Swiper
+  const swiper = new Swiper('.mySwiper', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
+  // Listen for arrow key presses for image navigation
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'ArrowRight') {
+      swiper.slideNext();
+    } else if (event.key === 'ArrowLeft') {
+      swiper.slidePrev();
+    }
+  });
+
+  // Handle form submission
+  document.getElementById('generate-btn').addEventListener('click', function() {
+    const userQuery = document.getElementById('user-query').value;
+    console.log(userQuery);  // Replace with the API call to Flask to get the images.
+  });
+</script>
+
+</body>
+</html>
