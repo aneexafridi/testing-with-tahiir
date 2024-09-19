@@ -1,0 +1,269 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Manrope", sans-serif;
+
+}
+
+
+ /* navbar styling started here */
+.navbar{
+    box-shadow: 0 1px 3px rgba(134,134,134,0.12), 0 1px 2px rgba(134,134,134,0.12);
+}
+.navbar-brand{
+    font-size: 1.5rem;
+    color: #000000;
+}
+.navbar-brand strong{
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+  .navbar-nav .nav-link {
+    margin-right: 15px;
+    color: #171313;
+    font-size: 1rem;
+  }
+
+  .dropdown-item {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #464646;
+  }
+  .dropdown-item img{
+    margin-right: 5px;
+  }
+
+
+  .btn-deploy{
+    background:  #E5365C;
+    color: #FFFFFF;
+    padding: 10px 35px;
+  }
+  .btn-deploy:hover{
+    border: 2px solid  #E5365C;
+    padding: 10px 35px;
+  }
+  .btn-stop{
+    border: 2px solid  #E5365C;
+    padding: 10px 35px;
+    color: #E5365C;
+  }
+  .btn-stop:hover{
+    background:  #E5365C;
+    color: #FFFFFF;
+    padding: 10px 35px;
+  }
+
+  .btn-link {
+    font-size: 1.2rem;
+    padding: 0;
+    rotate: 90deg;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+
+
+.btn-link.dots::after {
+    content: '\2022 \2022 \2022'; /* Unicode for dots */
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    color: black;
+  }
+  .dropdown-menu {
+    min-width: 100px;
+  }
+
+
+  /* navbar styling ended here */
+
+  /*hero section styling started here */
+
+  .hero-section{
+    display: flex;
+    flex-direction: column;
+   
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .hero-heading{
+    font-size: 2rem;
+    color: #171313;
+    font-weight: 700;
+  }
+
+  .search-box{
+    display: flex;
+    gap: 30px;
+    padding: 0 10px;
+    
+  }
+
+  .search-box input{
+    flex: 1;
+    padding: 10px 20px;
+    border: 1px solid #DFDFDF;
+    outline: none;
+    background: #FFFFFF;
+    border-radius: 5px;
+
+  }
+
+  .search-box button{
+    display: block;
+    padding: 10px 50px;
+    border-radius: 5px;
+    background: #E5365C;
+    color: #f4f4f4;
+    border: none;
+  }
+  .search-box button:hover{
+    border: 2px solid  #E5365C;
+    background: #f4f4f4;
+    color: #000000;
+
+    
+  }
+
+  input ::placeholder{
+    color: #464646;
+  }
+  
+
+  .progress-steps {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #313131;
+    text-align: center;
+  }
+
+
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+    /* background: #EAEAEA; */
+    
+    
+}
+
+  .swiper-slide {
+    
+    text-align: center;
+    font-size: 18px;
+    background: #fff !important;
+    display: flex;
+    padding: 0px !important;
+    border-radius: 30px !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* margin -bottom: 20px; */
+  }
+
+  .custom-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #868686;
+    opacity: 1;
+    margin: 0 5px;
+    border-radius: 50%;
+  }
+
+  .custom-pagination .swiper-pagination-bullet-active {
+    background-color: #E5365c;
+    width: 20px;
+    border-radius: 20px;
+  }
+ 
+  /*hero section styling ended here */
+
+
+
+  .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    content: 'prev';
+    display: none ;
+}
+
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+  content: 'next';
+display: none;
+}
+
+
+  /* Responsive Design */
+/* Tablet - Medium screen sizes */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 0 15px;
+        gap: 15px;
+    }
+
+    .hero-heading {
+        font-size: 1.8rem;
+    }
+
+    .search-box {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-box input {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .search-box button {
+        padding: 10px 20px;
+        width: 100%;
+    }
+
+    .swiper-slide img {
+        width: 80%;
+        height: auto;
+    }
+
+    .progress-steps {
+        font-size: 12px;
+    }
+}
+
+/* Mobile - Small screen sizes */
+@media (max-width: 576px) {
+    .hero-heading {
+        font-size: 1.5rem;
+    }
+
+    .search-box {
+        gap: 5px;
+    }
+
+    .search-box input,
+    .search-box button {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .progress-steps {
+        font-size: 10px;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: auto;
+    }
+}

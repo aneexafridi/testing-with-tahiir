@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Manrope", sans-serif;
+
+}
+
+/* navbar styling started here */
+.navbar{
+    box-shadow: 0 1px 3px rgba(134,134,134,0.12), 0 1px 2px rgba(134,134,134,0.12);
+}
+.navbar-brand{
+    font-size: 1.5rem;
+    color: #000000;
+}
+.navbar-brand strong{
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+  .navbar-nav .nav-link {
+    margin-right: 15px;
+    color: #171313;
+    font-size: 1rem;
+  }
+
+  .dropdown-item {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #464646;
+  }
+  .dropdown-item img{
+    margin-right: 5px;
+  }
+
+  .btn-free-trial {
+    background-color: #E5365c;
+    color: #f4f4f4;
+    border: none;
+    font-size: 16px;
+    padding: 8px 20px;
+    border-radius: 5px;
+ border: 2px solid  #E5365c;
+
+ font-weight: 500;
+  }
+
+  .btn-free-trial:hover {
+    border: 2px solid  #E5365c;
+    
+    color: #E5365C;
+    border-radius: 5px;
+  }
+
+  .btn-free-trial:hover  svg path{
+    fill: #E5365c;
+  }
+
+  .btn-login {
+    padding: 8px 35px;
+    border: 2px solid #E5365C;
+    font-size: 16px;
+    color: #E5365C;
+    border-radius: 5px;
+    font-weight: 500;
+  }
+  .btn-login:hover{
+    background-color: #E5365c;
+    color: #f4f4f4;
+    border: none;
+    font-size: 16px;
+    
+    border: 2px solid #E5365C;
+    border-radius: 5px;
+  }
+
+/* navbar styling ended here */
+
+
+/* hero section styling started here */
+
+
+
+  .hero-section {
+   
+    
+    padding: 50px 0;
+    
+    background: #F7F7F7;
+
+  }
+
+  
+  .hero-content h1 {
+    font-size: 2.7rem;
+    margin-top: 30px;
+    font-weight: bold;
+    color: #171313;
+    font-weight: 500;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    color: #171313;
+    font-weight: 400;
+  }
+
+  
+  .btn-custom {
+    background-color: #E5365C;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+  }
+
+  .btn-custom:hover {
+    border: 2px solid #E5365C;
+    font-size: 16px;
+    color: #E5365C;
+  } 
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(66.84deg, #E76B86 2.99%, #F5375F 100%);
+    padding: 50px 80px;
+    border-radius: 5px;
+
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+  }
+
+  .swiper-slide {
+    width: 80%;
+  }
+
+  
+  .custom-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  .custom-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #f4f4f4;
+    border: 1px solid #777777;
+    opacity: 1;
+    margin: 0 5px;
+    border-radius: 50%;
+  }
+
+  .custom-pagination .swiper-pagination-bullet-active {
+    background-color: #E5365c;
+    width: 20px;
+    border-radius: 20px;
+  }
+
+/* hero section styling ended here */
+
+  
+  
+  /* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .hero-section {
+        padding: 40px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.95rem;
+    }
+
+ 
+
+    .hero-content h1 {
+        font-size: 2rem;
+        
+    }
+   .swiper{
+    margin-top: 20px;
+   }
+    .swiper-slide {
+        padding: 40px 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 30px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 1.75rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .btn-free-trial,
+    .btn-login {
+        font-size: 14px;
+        padding: 6px 15px;
+    }
+
+    .swiper-slide {
+        padding: 30px 40px;
+    }
+
+    .custom-pagination .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+    }
+
+    .custom-pagination .swiper-pagination-bullet-active {
+        width: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section{
+        padding: 10px 15px;
+    }
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 0.85rem;
+    }
+
+    .swiper-slide {
+        padding: 20px 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero-section{
+        padding: 25px 15px;
+    }
+    .hero-content h1 {
+        font-size: 25px;
+    }
+    
+    .swiper-slide {
+        padding: 0;
+    }
+    .hero-content p {
+        font-size: 16px;
+       
+    }
+
+    .swiper-slide {
+        padding: 20px 30px;
+    }
+}
+
+
+
+/* ..................footer.................... */
+ 
+ 
+.space-container {
+  padding: 0 100px;
+}
+@media (max-width: 992px) {
+  .space-container {
+    padding: 0 80px;
+  }
+  .carosoul-h2 {
+    font-size: 40px !important;
+  }
+}
+@media (max-width: 768px) {
+  .space-container {
+    padding: 0 60px;
+  }
+}
+@media (max-width: 620px) {
+  .space-container {
+    padding: 0 40px;
+  }
+  .carosoul-h2 {
+    font-size: 35px !important;
+  }
+  .carosoul-p {
+    font-size: 18px !important;
+  }
+}
+@media (max-width: 450px) {
+  .space-container {
+    padding: 0 30px;
+  }
+  .carosoul-h2 {
+    font-size: 27px !important;
+  }
+  .carosoul-p {
+    font-size: 16px !important;
+  }
+}
+ul {
+  padding-left: 0rem;
+}
+.carosoul-h2 {
+  text-align: center;
+  margin-top: 40px;
+  color: #171313;
+  font-size: 44px;
+  font-weight: 500;
+}
+.carosoul-p {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 40px;
+  color: #171313;
+  font-size: 20px;
+  font-weight: 400;
+  
+}
+
+.carosoul-btn {
+  padding: 10px 15px;
+  color: white;
+  background-color: #262626;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  font-weight: 400;
+  transition: 0.5s ease-in-out;
+  border: 1px solid #262626;
+}
+.carosoul-btn:hover {
+  background-color: white;
+  color: #262626;
+}
+.slick-dots {
+  display: none !important;
+}
+
+/* footer */
+
+
+.footer{
+  background: linear-gradient(180deg, #ffffff 0%, #f1f1f1 100%);
+
+}
+.footer-h5 {
+  margin: 20px 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+.footer-list {
+  list-style: none;
+}
+.footer-list li {
+  margin-top: 12px;
+}
+.footer-list li a {
+  text-decoration: none;
+  color: #2c2c2c;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.footer-list li a:hover{
+ 
+  color: #E5365c;
+  font-weight: 600;
+ 
+}
+.footer-mail {
+  text-decoration: none;
+  color: #2c2c2c;
+}
+
+.media-icon {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 5px;
+ 
+}
+.media-icon img{
+  height: 25px;
+  width: 25px;
+}
+.media-icon img:hover{
+ transform: scale(1.3);
+ transition: 0.5s;
+}
+.copy {
+  background-color: white !important;
+}
+.copyright {
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.copyright p {
+  margin-bottom: 0px;
+  font-weight: 400;
+
+  color: #171313;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.line {
+  height: 2px;
+  border-radius: 20px;
+  background-color: #d4d4d4;
+  margin-top: 50px;
+}
+
+.row {
+  --bs-gutter-x: 0;
+}
+
+.slick-prev,
+.slick-next {
+  background: none; /* Remove default background */
+  border: none; /* Remove border */
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slick-prev {
+  left: -30px; /* Position previous button */
+}
+
+.slick-next {
+  right: 0px; /* Position next button */
+}
+
+.slick-prev i,
+.slick-next i {
+  font-size: 30px; /* Set icon size */
+  color: black; /* Set icon color */
+}
+
+/* Optionally, you can change color on hover */
+.slick-prev:hover i,
+.slick-next:hover i {
+  color: gray; /* Change color on hover */
+}
+
+.slick-prev:before {
+  content: "" !important; /* FontAwesome arrow left */
+}
+
+.slick-next:before {
+  content: "" !important; /* FontAwesome arrow right */
+}
+
+
+
+
+.slick-prev i, .slick-next i {
+  font-size: 30px;
+  color: black;
+  border: 2px solid black;
+ padding-left: 5px;
+ padding-right: 5px;
+ border-radius: 100px;
+  
+}
+
+.slick-prev:hover  i{
+  background-color: black;
+  color: white;
+}
+.slick-next:hover  i{
+  background-color: black;
+  color: white;
+}
